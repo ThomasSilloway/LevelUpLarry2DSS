@@ -1,0 +1,2 @@
+*.UASSET filter=lfs diff=lfs merge=lfs -text
+*.UMAP filter=lfs diff=lfs merge=lfs -text
