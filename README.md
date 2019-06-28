@@ -11,3 +11,7 @@ The next phases to get to a Proof of Concept are:
  - Enemy spawning system - queues up enemies off screen that will be spawned as larry progresses through the level
  - Procedurally generated infinite scrolling level
  - Hook up twitch chat integration
+ 
+Polish
+ - Don't move camera until Larry gets to X percentage of the screen in either direction, so he can run back and forth without moving the camera.  
+ - Once the camera doesn't move all the time with simple movement, adjust spawning system to pause spawns if camera isn't moving instead of character
