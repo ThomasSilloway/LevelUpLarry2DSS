@@ -9,9 +9,19 @@ Right now this is still a prototype and currently in development.
 
 The next phases to get to a Proof of Concept are:
  - Enemy spawning system - queues up enemies off screen that will be spawned as larry progresses through the level
+   - TODO: Don't allow more than 1 enemy per player alive / in queue at a time
  - Procedurally generated infinite scrolling level
+   - TODO: Iron out a few issues with initial PR
+   - TODO: Hook up an actual set of tiles from example content
  - Hook up twitch chat integration
  
 Polish
  - Don't move camera until Larry gets to X percentage of the screen in either direction, so he can run back and forth without moving the camera.  
  - Once the camera doesn't move all the time with simple movement, adjust spawning system to pause spawns if camera isn't moving instead of character
+ 
+ Enemy Spawning Logic
+ - Spawns on spawn points right now, tries to spawn them every 1 second if there are any in the queue & if Larry is not currently moving
+ - Spawns enemies at least X units away from Larry, so they spawn off screen
+ - Pulls enemies off the queue to determine which enemy type to spawn
+ - Enemies are added to the queue by either RandomEnemyGenerator (for testing) or via Twitch Integration ( coming soon )
+ - RandomEnemyGenerator simulates Twitch Integration by adding to the EnemyQueue random EnemyProfiles at random times
