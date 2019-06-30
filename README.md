@@ -25,3 +25,4 @@ Polish
  - Pulls enemies off the queue to determine which enemy type to spawn
  - Enemies are added to the queue by either RandomEnemyGenerator (for testing) or via Twitch Integration ( coming soon )
  - RandomEnemyGenerator simulates Twitch Integration by adding to the EnemyQueue random EnemyProfiles at random times
+ - There can only be one enemy alive or in the queue at a time.  This logic is handled by the EnemySpawnPermissions
