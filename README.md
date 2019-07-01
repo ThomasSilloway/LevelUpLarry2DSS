@@ -12,6 +12,8 @@ The next phases to get to a Proof of Concept are:
    - TODO: Iron out a few issues with initial PR
    - TODO: Hook up an actual set of tiles from example content
  - Hook up twitch chat integration
+   - TODO: Save Auth token so only have to log in if auth token isn't valid
+   - TODO: Hook up loading UI for when logging into twitch
  
 Polish
  - Don't move camera until Larry gets to X percentage of the screen in either direction, so he can run back and forth without moving the camera.  
@@ -24,3 +26,8 @@ Polish
  - Enemies are added to the queue by either RandomEnemyGenerator (for testing) or via Twitch Integration ( coming soon )
  - RandomEnemyGenerator simulates Twitch Integration by adding to the EnemyQueue random EnemyProfiles at random times
  - There can only be one enemy alive or in the queue at a time.  This logic is handled by the EnemyQueuePermissions
+ 
+ Twitch Integration
+ - To enable twitch integration, download the TwitchWorks plugin & follow the instructions to enable it
+ - In EnemySpawnerGameMode, turn on the twitch integration boolean
+ - Please when making changes turn off the twitch integration and use the random enemy spawner instead, twitch integration should only be turned on for publishing
