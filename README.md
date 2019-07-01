@@ -8,8 +8,6 @@ In order to use this project, you must use UE4 v4.21.2
 Right now this is still a prototype and currently in development.
 
 The next phases to get to a Proof of Concept are:
- - Enemy spawning system - queues up enemies off screen that will be spawned as larry progresses through the level
-   - TODO: Don't allow more than 1 enemy per player alive / in queue at a time
  - Procedurally generated infinite scrolling level
    - TODO: Iron out a few issues with initial PR
    - TODO: Hook up an actual set of tiles from example content
@@ -25,4 +23,4 @@ Polish
  - Pulls enemies off the queue to determine which enemy type to spawn
  - Enemies are added to the queue by either RandomEnemyGenerator (for testing) or via Twitch Integration ( coming soon )
  - RandomEnemyGenerator simulates Twitch Integration by adding to the EnemyQueue random EnemyProfiles at random times
- - There can only be one enemy alive or in the queue at a time.  This logic is handled by the EnemySpawnPermissions
+ - There can only be one enemy alive or in the queue at a time.  This logic is handled by the EnemyQueuePermissions
