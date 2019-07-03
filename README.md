@@ -16,7 +16,9 @@ Polish
  - Don't move camera until Larry gets to X percentage of the screen in either direction, so he can run back and forth without moving the camera.  
  - Once the camera doesn't move all the time with simple movement, adjust spawning system to pause spawns if camera isn't moving instead of character
  - Hook up loading UI for when logging into twitch
- - Add multiple blob enemies from Larry's content package
+ - Rework collision for Enemies so it uses Box component as primary component
+   - This involves remaking the enemy as not a pawn & then reworking the movement because it's unlikely the current movement system will work, player movement component may not be able to be added to non-pawns
+ - Add multiple blob enemies from Larry's content package - In progress - TODO: Add green & blue, red is in - Try grayscaling the red one & then change color via color param
  - Add additional AI behaviors
  - Choose different enemies / behaviors for subs/followers/normal
  - Add XP bar
