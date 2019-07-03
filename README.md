@@ -18,7 +18,7 @@ Polish
  - Hook up loading UI for when logging into twitch
  - Rework collision for Enemies so it uses Box component as primary component
    - This involves remaking the enemy as not a pawn & then reworking the movement because it's unlikely the current movement system will work, player movement component may not be able to be added to non-pawns
- - Add multiple blob enemies from Larry's content package - In progress - TODO: Add green & blue, red is in - Try grayscaling the red one & then change color via color param
+ - Add multiple blob enemies from Larry's content package - In progress - TODO: Add blue, red & green are in
  - Add additional AI behaviors
  - Choose different enemies / behaviors for subs/followers/normal
  - Add XP bar
