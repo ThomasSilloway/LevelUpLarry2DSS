@@ -20,6 +20,7 @@ Polish
    - This involves remaking the enemy as not a pawn & then reworking the movement because it's unlikely the current movement system will work, player movement component may not be able to be added to non-pawns
  - Add additional AI behaviors
  - Choose different behaviors for bits badget/subs/normal
+ - Adjust knockback forces for different size blobs
  - Add sounds!
  - Add XP bar
  
