@@ -8,29 +8,15 @@ In order to use this project, you must use UE4 v4.21.2
 Right now this is still a prototype and currently in development.
 
 The next phases to get to a Proof of Concept are:
- - Procedurally generated infinite scrolling level
-   - TODO: Iron out a few issues with initial PR
-   - TODO: Hook up an actual set of tiles from example content
- 
-Polish
- - Don't move camera until Larry gets to X percentage of the screen in either direction, so he can run back and forth without moving the camera.  
- - Once the camera doesn't move all the time with simple movement, adjust spawning system to pause spawns if camera isn't moving instead of character
- - Hook up loading UI for when logging into twitch
- - Rework collision for Enemies so it uses Box component as primary component
-   - This involves remaking the enemy as not a pawn & then reworking the movement because it's unlikely the current movement system will work, player movement component may not be able to be added to non-pawns
- - Add additional AI behaviors
- - Choose different behaviors for bits badget/subs/normal
- - Adjust knockback forces for different size blobs
- - Add sounds!
- - Add XP bar
+ - Procedurally generated infinite scrolling level - in progress by Mr stabby
  
  Enemy Spawning Logic
  - Spawns on spawn points right now, tries to spawn them every 1 second if there are any in the queue & if Larry is not currently moving
  - Spawns enemies at least X units away from Larry, so they spawn off screen
  - Pulls enemies off the queue to determine which enemy type to spawn
- - Enemies are added to the queue by either RandomEnemyGenerator (for testing) or via Twitch Integration ( coming soon )
+ - Enemies are added to the queue by either RandomEnemyGenerator (for testing) or via Twitch Integration
  - RandomEnemyGenerator simulates Twitch Integration by adding to the EnemyQueue random EnemyProfiles at random times
- - There can only be one enemy alive or in the queue at a time.  This logic is handled by the EnemyQueuePermissions
+ - There can only be one enemy per user alive or in the queue at a time.  This logic is handled by the EnemyQueuePermissions
  
  Twitch Integration
  - To enable twitch integration, download the TwitchWorks plugin & follow the instructions to enable it
