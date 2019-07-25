@@ -12,7 +12,7 @@ In order to use this project, you must use UE4 v4.21.2.
  - Clone the repository & put the files in a similar file structure as the sample game
    - Note: This repo uses Git LFS, so you must enable that via commandline or use a Git GUI like [SourceTree (Recommended)](https://www.sourcetreeapp.com/) which automatically supports Git LFS
  - Open the .uproject file and you'll see the game in the editor
- - Open up the LongMap file under `Content\2DSideScrollerBP\Maps` and click the play button to play
+ - Open up the Procedural_Level file under `Content\2DSideScrollerBP\Maps` and click the play button to play
  - If you want it to be full screen, there's an option next to play button to launch in different resolutions
 
  
