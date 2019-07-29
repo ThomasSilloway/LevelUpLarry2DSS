@@ -14,16 +14,17 @@ In order to use this project, you must use UE4 v4.21.2.
  - Open the .uproject file and you'll see the game in the editor
  - Open up the Procedural_Level file under `Content\2DSideScrollerBP\Maps` and click the play button to play
  - If you want it to be full screen, there's an option next to play button to launch in different resolutions
+ 
+## Launching
+ - To Launch game without the editor, right click on UE4/LaunchGame.ps1 and Run in Powershell
+   - To set resolution adjust the resx & resy commands in the script
 
  
 See UE4 documentation for more info on how to run a game via the editor and how to publish a game.
 
 ## Project Status
 
-Right now this is still a prototype and currently in development.
-
-The next phases to get to a Proof of Concept are:
- - Procedurally generated infinite scrolling level - in progress by Mr stabby
+Right now this is still a prototype and currently in development.  The upcoming tasks are tracked in Trello.  Please ask Larry for permission to view it :)
  
 ## Features
  
