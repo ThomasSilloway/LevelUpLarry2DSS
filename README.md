@@ -48,3 +48,10 @@ Right now this is still a prototype and currently in development.  The upcoming 
  - Tile blueprint also has volumes that when triggered attempt to spawn the next tile
  - Right now tiles are only spawned if the player is moving in that direction and they too close to the edge ( ex. 2 tiles away )
  - Tile blueprint also contains spawnpoints for enemies
+ 
+  ### Boss Spawning Logic
+ - Create a UI Widget that handles leveling up the boss's health
+ - Emojis spammed by the audience fill up the health bar
+ - After bar is full or X seconds, end the powering up stage & start spawning
+ - After boss is killed, resume normal gameplay seamlessly
+ - TODO: Add enemy health & AI and spawn via map progression instead of console command
