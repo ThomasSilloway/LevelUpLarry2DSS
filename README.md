@@ -54,4 +54,5 @@ Right now this is still a prototype and currently in development.  The upcoming 
  - Emojis spammed by the audience fill up the health bar
  - After bar is full or X seconds, end the powering up stage & start spawning
  - After boss is killed, resume normal gameplay seamlessly
- - TODO: Add enemy health & AI and spawn via map progression instead of console command
+ - Boss Spawns when the Boss Tile is touched
+ - Boss Tile is spawned once the next tile is spawned after X enemies are dead
