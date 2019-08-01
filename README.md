@@ -56,3 +56,14 @@ Right now this is still a prototype and currently in development.  The upcoming 
  - After boss is killed, resume normal gameplay seamlessly
  - Boss Spawns when the Boss Tile is touched
  - Boss Tile is spawned once the next tile is spawned after X enemies are dead
+ 
+ ### Twitch Emote Handling
+ 
+ Currently broken waiting on TwitchWorks plugin update - right now just uses hard coded larry emotes
+ 
+ - When user sends a message, delegate is called
+ - TODO TwitchEmoteDownloader will bind to the delegate & download the textures
+ - TwitchEmoteDownloader also starts downloading emotes as soon as the user connects to the channel
+ - Textures will be stored by Hash of EmoteName -> Texture 
+ - TODO Boss/EmoteSpawner will request a texture from TwitchEmoteDownloader
+ - TODO If no texture is found a default will be returned
