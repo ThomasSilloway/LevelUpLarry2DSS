@@ -67,3 +67,8 @@ Right now this is still a prototype and currently in development.  The upcoming 
  - Textures will be stored by Hash of EmoteName -> Texture 
  - TODO Boss/EmoteSpawner will request a texture from TwitchEmoteDownloader
  - TODO If no texture is found a default will be returned
+ 
+ ### Powerups
+ - Only 1 powerup can be active at a time
+ - Pawn will store refence to currently active powerup
+ - Pressing F will trigger the powerup, releasing F will deactivate
