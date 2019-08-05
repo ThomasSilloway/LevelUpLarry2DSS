@@ -3,7 +3,7 @@
   <Namespace>System.Windows.Forms</Namespace>
 </Query>
 
-bool bShowFileDialog = false;
+bool bShowFileDialog = true;
 string OutputFileName = "spritesheet.paper2dsprites";
 	
 void Main()
@@ -19,10 +19,10 @@ void Main()
 		MessageBox.Show("Choose path to spritesheet png");
 		spritesheetPath = GetFilePathFromDialog();
 		
-		// Expected name ex: fire_pillar_spritesheet
-		sprite_name = Path.GetFileName(spritesheetPath);
-		var spritesheetIdx = sprite_name.IndexOf("spritesheet");
-		sprite_name = sprite_name.Substring(0, spritesheetIdx - 1);
+		// Expected name ex: fire_pillar_loop.txt
+		sprite_name = Path.GetFileName(path);
+		var spritesheetIdx = sprite_name.IndexOf('.');
+		sprite_name = sprite_name.Substring(0, spritesheetIdx);
 	}
 	else
 	{
