@@ -8,38 +8,43 @@ string OutputFileName = "spritesheet.paper2dsprites";
 	
 void Main()
 {
-	var path = "";
-	var spritesheetPath = "";
-	var sprite_name = "";
-	
-	if(bShowFileDialog)
+	while(true)
 	{
-		MessageBox.Show("Choose path to spritesheet data");
-		path = GetFilePathFromDialog();
-		MessageBox.Show("Choose path to spritesheet png");
-		spritesheetPath = GetFilePathFromDialog();
+		var path = "";
+		var spritesheetPath = "";
+		var sprite_name = "";
 		
-		// Expected name ex: fire_pillar_loop.txt
-		sprite_name = Path.GetFileName(path);
-		var spritesheetIdx = sprite_name.IndexOf('.');
-		sprite_name = sprite_name.Substring(0, spritesheetIdx);
+		if(bShowFileDialog)
+		{
+			MessageBox.Show("Choose path to spritesheet data");
+			path = GetFilePathFromDialog();
+			MessageBox.Show("Choose path to spritesheet png");
+			spritesheetPath = GetFilePathFromDialog();
+			
+			// Expected name ex: fire_pillar_loop.txt
+			sprite_name = Path.GetFileName(path);
+			var spritesheetIdx = sprite_name.IndexOf('.');
+			sprite_name = sprite_name.Substring(0, spritesheetIdx);
+		}
+		else
+		{
+			path = "C:\\Users\\tcsil\\Downloads\\ParticleFX\\wills_magic_particle_effects\\wills_magic_particle_effects\\fire_pillar\\spritesheet.txt";
+			spritesheetPath = "C:\\Users\\tcsil\\Downloads\\ParticleFX\\wills_magic_particle_effects\\wills_magic_particle_effects\\fire_pillar\\fire_pillar_spritesheet.png";
+			sprite_name = "fire_pillar";
+		}
+		
+		path.Dump();
+		spritesheetPath.Dump();
+		sprite_name.Dump();
+		
+		var spriteData = ParseSpriteSheetFile(path);
+		var outputLines = FormatOutput(spriteData, spritesheetPath, sprite_name);	
+		var outputPath = Path.GetDirectoryName(path) + "\\" + sprite_name + "_" + OutputFileName;
+		//outputLines.Dump();
+		System.IO.File.WriteAllLines(outputPath, outputLines);
+		
+		$"Saved {outputPath}".Dump();
 	}
-	else
-	{
-		path = "C:\\Users\\tcsil\\Downloads\\ParticleFX\\wills_magic_particle_effects\\wills_magic_particle_effects\\fire_pillar\\spritesheet.txt";
-		spritesheetPath = "C:\\Users\\tcsil\\Downloads\\ParticleFX\\wills_magic_particle_effects\\wills_magic_particle_effects\\fire_pillar\\fire_pillar_spritesheet.png";
-		sprite_name = "fire_pillar";
-	}
-	
-	path.Dump();
-	spritesheetPath.Dump();
-	sprite_name.Dump();
-	
-	var spriteData = ParseSpriteSheetFile(path);
-	var outputLines = FormatOutput(spriteData, spritesheetPath, sprite_name);	
-	var outputPath = Path.GetDirectoryName(path) + "\\" + sprite_name + "_" + OutputFileName;
-	//outputLines.Dump();
-	System.IO.File.WriteAllLines(outputPath, outputLines);
 }
 	
 string GetFilePathFromDialog()
