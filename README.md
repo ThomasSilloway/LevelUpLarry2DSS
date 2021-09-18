@@ -27,6 +27,14 @@ See UE4 documentation for more info on how to run a game via the editor and how 
 Right now this is still a prototype and currently in development.  The upcoming tasks are tracked in Trello.  Please ask Larry for permission to view it :)
  
 ## Features
+
+ ### Controls
+ - WASD - Movement
+ - K - Attack 
+ - F - Activate Powerup
+ 
+ ### Instructions for Streamer
+ - Right click the LaunchGame.ps1 and click `Run with Powershell`
  
  ### Enemy Spawning Logic
  - Spawns on spawn points right now, tries to spawn them every 1 second if there are any in the queue & if Larry is not currently moving
