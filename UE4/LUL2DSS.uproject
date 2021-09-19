@@ -3,16 +3,6 @@
 	"EngineAssociation": "4.21",
 	"Category": "",
 	"Description": "",
-	"Modules": [
-		{
-			"Name": "LUL2DSS",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
-		}
-	],
 	"Plugins": [
 		{
 			"Name": "Paper2D",
