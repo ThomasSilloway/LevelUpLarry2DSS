@@ -3,7 +3,17 @@ Larry is travelling through a 2D side scrolling environment when he is confronte
 
 Based off [Design doc](https://docs.google.com/document/d/1iMpK-hJsFLI4GPMWzvPedDiAtvYZl5U48OwvbeyLm2I/edit#heading=h.19u0nz2irg77) on Google Docs.  This project is the `Larry vs Twitch Chat` idea.
 
-In order to use this project, you must use UE4 v4.21.2.
+Main project - UE4 v4.21.2
+Prototype project - Unity 2020.3.18f1
+
+# Unity Build
+
+## Installation
+ - Download the correct Unity version via Unity Hub.
+ - Install VSCode to edit the script files, see Unity documentation for setup
+ - Launch via Unity Hub!
+
+# UE4 Build
 
 ## Installation
 
@@ -32,9 +42,6 @@ Right now this is still a prototype and currently in development.  The upcoming 
  - WASD - Movement
  - K - Attack 
  - F - Activate Powerup
- 
- ### Instructions for Streamer
- - Right click the LaunchGame.ps1 and click `Run with Powershell`
  
  ### Enemy Spawning Logic
  - Spawns on spawn points right now, tries to spawn them every 1 second if there are any in the queue & if Larry is not currently moving
